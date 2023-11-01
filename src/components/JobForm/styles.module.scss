@@ -1,0 +1,39 @@
+@import '../../index.scss';
+@import '../../sass/mixins';
+
+.jobForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 72px auto;
+  width: 100%;
+  &__container {
+    @include borderRadius(4px);
+    box-shadow: 0 4px 4px rgba(87,100,126,.21);
+    background-color: #fff;
+    width: 80%;
+    .head {
+      padding: 40px 52px;
+      border-bottom: 1px solid #d7d8e1;
+      .title {
+        font-size: 32px;
+        color: #2c3345;
+        word-break: break-word;
+        font-weight: 600;
+        line-height: 1.45;
+        margin-bottom: 8px;
+      }
+      .text {
+        font-size: 18px;
+        color: #57647e;
+        word-break: break-word;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+    }
+    .form {
+      padding: 40px 52px;
+
+    }
+  }
+}

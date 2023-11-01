@@ -1,0 +1,101 @@
+
+
+$white: #fff;
+$black: #000;
+// $primary: #00784B;
+// $primary: #1F4758;
+$primary: #7FC5D6;
+$secondary: #333333;
+$warning: #FFC62A;
+$danger: #F55157;
+$success: #00AF6C;
+$info: #5196F3;
+$yellow: #F2C652;
+
+$background: #f3f3fe;
+$main-Black: #2c3345;
+
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-xl: 24px;
+$radius-xxl: 32px;
+
+$shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+
+
+$xxs-media: 370px;
+$xs-media: 450px;
+$sm-media: 576px;
+$md-media: 768px;
+$lg-media: 992px; 
+$xl-media: 1200px;
+$xxl-media: 1400px;
+
+$Roboto-font: 'Roboto', sans-serif;
+$Cairo-font: 'Cairo', sans-serif;
+$Poppins-font: 'Poppins', sans-serif;
+
+// --------------------------------------------------------------
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  background-color: $background;
+  color: $main-Black;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  background-color: transparent;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  // background-color: var(--white);
+}
