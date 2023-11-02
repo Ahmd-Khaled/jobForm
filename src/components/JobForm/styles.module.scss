@@ -92,6 +92,45 @@
               // background-color: red;
             }
           }
+          .checkContainer {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            input {
+              width: 20px;
+              height: 20px;
+              background-color: $white;
+              border: 1px solid $gray-b8;
+              @include borderRadius(4px);
+            }
+            label {
+              color: $gray-57;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .sendBtn {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: $sm-media) {
+          padding: 30px;
+        }
+        button {
+          padding: 8px 32px;
+          border: 1px solid $success;
+          @include borderRadius(4px);
+          background-color: $success;
+          color: $white;
+          font-size: 22px;
+          font-weight: bold;
+          &:hover {
+            background-color: $white;
+            color: $success;
+          }
         }
       }
     }

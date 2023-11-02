@@ -259,11 +259,66 @@ const JobForm = () => {
                   placeholder="العنوان الحالي"
                 />
               </div>
-              <div>
+              <div className={styles.checkContainer}>
                 <input type="checkbox" id="notInKSA" />
                 <label htmlFor="notInKSA">غير سعودي - هل أنت مستعد لنقل الكفالة</label>
               </div>
             </div>
+          </div>
+          <div className={styles.group}>
+            <div className={styles.inputWrapper}>
+              <h3 className={styles.inpTitle}>الحالة الاجتماعية</h3>
+              <div className={styles.inputs}>
+                <div className={styles.checkContainer}>
+                  <input name="maritalStatus" type="radio" id="married" />
+                  <label htmlFor="married">متزوج</label>
+                </div>
+                <div className={styles.checkContainer}>
+                  <input name="maritalStatus" type="radio" id="single" />
+                  <label htmlFor="single">أعزب</label>
+                </div>
+              </div>
+            </div>
+            <div className={styles.inputWrapper}>
+              <h3 className={styles.inpTitle}>هل سبق و عملت في هذه الشركة؟</h3>
+              <div className={styles.inputs}>
+                <div className={styles.checkContainer}>
+                  <input name="workedBefore" type="radio" id="yes-worked" />
+                  <label htmlFor="yes-worked">نعم</label>
+                </div>
+                <div className={styles.checkContainer}>
+                  <input name="workedBefore" type="radio" id="no-notWorked" />
+                  <label htmlFor="no-notWorked">لا</label>
+                </div>
+              </div>
+            </div>
+            <div className={styles.inputWrapper}>
+              <h3 className={styles.inpTitle}>متى تستطيع مباشرة العمل ؟</h3>
+              <div className={styles.inputs}>
+                <Input 
+                  id="workNow"
+                  type="text"
+                  placeholder="يرجي كتابة تاريخ مباشرة العمل"
+                  isLabeled={false}
+                />
+              </div>
+            </div>
+            <div className={styles.inputWrapper}>
+              <h3 className={styles.inpTitle}>هل تعمل حاليا ؟</h3>
+              <div className={styles.inputs}>
+                <div className={styles.checkContainer}>
+                  <input name="areYouWorkingNow" type="radio" id="yes-worked" />
+                  <label htmlFor="yes-working">نعم</label>
+                </div>
+                <div className={styles.checkContainer}>
+                  <input name="areYouWorkingNow" type="radio" id="no-notWorked" />
+                  <label htmlFor="no-notWorking">لا</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles.sendBtn}>
+            <button>ارسال البيانات</button>
           </div>
         </form>
       </div>
