@@ -15,6 +15,7 @@
     .head {
       padding: 40px 52px;
       border-bottom: 1px solid #d7d8e1;
+      // background-color: #fafafa;
       .title {
         font-size: 32px;
         color: #2c3345;
@@ -32,17 +33,25 @@
       }
     }
     .form {
-      padding: 40px 52px;
-      .inputWrapper {
-        margin-bottom: 32px;
-        .inpTitle {
-          font-size: 22px;
-          margin-bottom: 8px;
-        }
-        .inputs {
-          display: flex;
-          align-items: center;
-          gap: 16px;
+      .group {
+        padding: 40px 52px;
+        border-bottom: 1px dashed $gray-b8;
+        .inputWrapper {
+          margin-bottom: 32px;
+          .inpTitle {
+            font-size: 22px;
+            margin-bottom: 8px;
+          }
+          .inputs {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px;
+            @media (max-width: $md-media) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
         }
       }
     }

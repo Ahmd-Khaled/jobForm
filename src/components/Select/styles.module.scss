@@ -1,24 +1,20 @@
 @import '../../index.scss';
 @import '../../sass/mixins';
 
-.inputBox {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  color: $main-Black;
-  input {
+.selectBox {
+  select {
     height: 40px;
     background-color: $white;
     border: 1px solid $gray-b8;
     @include borderRadius(4px);
-    padding: 0px 10px;
+    padding: 4px 8px;
+    outline: none;
     &:focus {
       border-color: $blue-2e;
       box-shadow: $shadow-1;
     }
-  }
-  label {
-    color: $gray-57;
-    font-size: 14px;
+    option {
+
+    }
   }
 }
