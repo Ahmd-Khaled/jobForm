@@ -7,15 +7,33 @@
   align-items: center;
   margin: 72px auto;
   width: 100%;
+  @media (max-width: $lg-media) {
+    margin: 52px auto;
+  }
+  @media (max-width: $md-media) {
+    margin: 32px auto;
+  }
+  @media (max-width: $sm-media) {
+    margin: 22px auto;
+  }
   &__container {
     @include borderRadius(4px);
     box-shadow: 0 4px 4px rgba(87,100,126,.21);
     background-color: #fff;
     width: 80%;
+    @media (max-width: $lg-media) {
+      width: 90%;
+    }
+    @media (max-width: $md-media) {
+      width: 95%;
+    }
     .head {
       padding: 40px 52px;
       border-bottom: 1px solid #d7d8e1;
       // background-color: #fafafa;
+      @media (max-width: $md-media) {
+        padding: 40px 22px;
+      }
       .title {
         font-size: 32px;
         color: #2c3345;
@@ -36,6 +54,9 @@
       .group {
         padding: 40px 52px;
         border-bottom: 1px dashed $gray-b8;
+        @media (max-width: $md-media) {
+          padding: 40px 22px;
+        }
         .inputWrapper {
           margin-bottom: 32px;
           .inpTitle {
@@ -51,11 +72,24 @@
               flex-direction: column;
               align-items: flex-start;
             }
-            .customSelect {
-              width: 200px;
+            .customSelect,
+            .customSelect1 {
+              flex: 1;
+              @media (max-width: $lg-media) {
+                width: 48%;
+              }
+              @media (max-width: $md-media) {
+                width: 90%;
+              }
+              @media (max-width: $sm-media) {
+                width: 100%;
+              }
+            }
+            .customSelect1 {
+              flex: 0 0 48%;
             }
             .innerSelect {
-              background-color: red;
+              // background-color: red;
             }
           }
         }

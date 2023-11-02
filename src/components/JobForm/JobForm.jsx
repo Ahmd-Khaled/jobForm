@@ -75,7 +75,7 @@ const JobForm = () => {
     <section className={styles.jobForm}>
       <div className={styles.jobForm__container}>
         <div className={styles.head}>
-          <h1 className={styles.title}>طلب وظيفي</h1>
+          <h1 className={styles.title}>طلب توظيف</h1>
           <p className={styles.text}>الرجاء تعبئة النموذج أدناه للتقدم لوظيفة لدى شركتنا</p>
         </div>
         <form className={styles.form}>
@@ -87,7 +87,7 @@ const JobForm = () => {
                   value={slectedJob}
                   onChange={setSlectedJob}
                   options={jobsList}
-                  className={styles.customSelect}
+                  className={styles.customSelect1}
                   classNamePrefix={styles.innerSelect}
                   placeholder="اختر الوظيفة المطلوبة"
                 />
