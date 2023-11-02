@@ -33,7 +33,18 @@
     }
     .form {
       padding: 40px 52px;
-
+      .inputWrapper {
+        margin-bottom: 32px;
+        .inpTitle {
+          font-size: 22px;
+          margin-bottom: 8px;
+        }
+        .inputs {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+      }
     }
   }
 }

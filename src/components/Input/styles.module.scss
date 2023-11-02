@@ -1,0 +1,20 @@
+@import '../../index.scss';
+@import '../../sass/mixins';
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: $main-Black;
+  input {
+    height: 40px;
+    background-color: $white;
+    border: 1px solid $gray-b8;
+    @include borderRadius(4px);
+    padding: 0px 10px;
+  }
+  label {
+    color: $gray-57;
+    font-size: 14px;
+  }
+}
