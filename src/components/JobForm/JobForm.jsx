@@ -1,36 +1,43 @@
 import Input from "../Input/Input";
-import Select from "../Select/Select";
+// import Select from "../Select/Select";
+import Select from 'react-select';
 import styles from "./styles.module.scss";
+import { useState } from "react";
 
 const availableJobs = [
   {
     id: 1,
-    titleAr: "مندوب ميداني",
-    titleEn: "",
+    label: "مندوب ميداني",
+    value: "مندوب ميداني",
   },
   {
     id: 2,
-    titleAr: "تسويق الكتروني",
-    titleEn: "",
+    label: "تسويق الكتروني",
+    value: "تسويق الكتروني",
   },
   {
     id: 3,
-    titleAr: "قانون موارد بشرية",
-    titleEn: "",
+    label: "قانون موارد بشرية",
+    value: "قانون موارد بشرية",
   },
   {
     id: 4,
-    titleAr: "مشرف ميداني",
-    titleEn: "",
+    label: "مشرف ميداني",
+    value: "مشرف ميداني",
   },
   {
     id: 5,
-    titleAr: "برمجة تطبيقات",
-    titleEn: "",
+    label: "برمجة تطبيقات",
+    value: "برمجة تطبيقات",
   },
 ];
 
 const JobForm = () => {
+  const [slectedJob, setSlectedJob] = useState("");
+
+  const slectedJobHandler = (option) => {
+    setSlectedJob(option);
+  }
   return (
     <section className={styles.jobForm}>
       <div className={styles.jobForm__container}>
@@ -43,10 +50,18 @@ const JobForm = () => {
             <div className={styles.inputWrapper}>
               <h3 className={styles.inpTitle}>الوظيفة المطلوبة</h3>
               <div className={styles.inputs}>
-                <Select 
+                <Select
+                  value={slectedJob}
+                  onChange={slectedJobHandler}
+                  options={availableJobs}
+                  className={styles.customSelect}
+                  classNamePrefix={styles.innerSelect}
+                  placeholder="اختر الوظيفة المطلوبة"
+                />
+                {/* <Select 
                   defaultOption=""
                   selectList={availableJobs}
-                />
+                /> */}
               </div>
             </div>
             <div className={styles.inputWrapper}>

@@ -51,6 +51,12 @@
               flex-direction: column;
               align-items: flex-start;
             }
+            .customSelect {
+              width: 200px;
+            }
+            .innerSelect {
+              background-color: red;
+            }
           }
         }
       }
